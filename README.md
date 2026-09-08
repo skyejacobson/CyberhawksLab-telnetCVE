@@ -1,6 +1,7 @@
 # CyberHawks lab demo finding report
 
 Credit to: [@SafeBreach-Labs](https://github.com/SafeBreach-Labs)
+CVE: [CVE-2026-24061](https://nvd.nist.gov/vuln/detail/cve-2026-24061)
 
 **Lab:** Cyberhawks Lab  
 **Target:** `10.1.1.1` (`demo.cyberhawks.lab`)  
