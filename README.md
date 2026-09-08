@@ -174,29 +174,10 @@ Full system compromise was achieved in a single, unauthenticated step. An attack
 
 ### Immediate (Critical Priority)
 
-1. **Disable and remove the Telnet service** — Telnet transmits all data in cleartext and has no place in any modern environment. Disable the `telnetd` service immediately:
-   ```
-   systemctl disable --now telnetd
-   ```
-
-2. **Patch or mitigate CVE-2026-24061** — Apply the vendor-supplied patch for GNU inetutils if Telnet must remain in use. Check for an updated package:
+1. **Patch or mitigate CVE-2026-24061** — Apply the vendor-supplied patch for GNU inetutils if Telnet must remain in use. Check for an updated package:
    ```
    apt update && apt install inetutils-telnetd
    ```
-
-### Short-Term
-
-5. **Replace Telnet with SSH** — Use SSH (TCP/22) for all remote administration. SSH provides encrypted, authenticated sessions.
-
-6. **Implement network segmentation and firewall rules** — Restrict access to management ports (22, 23, 3306, 3389, 5901, etc.) to trusted administrative IP ranges only. No management service should be internet-accessible.
-
-7. **Audit all other exposed services** — The host exposes 15 ports, many of which (RDP, VNC, SMB, NFS, MySQL) carry significant risk if misconfigured. Each should be reviewed.
-
-### Long-Term
-
-8. **Adopt a vulnerability management program** — Regularly scan lab and production hosts for known CVEs and patch on a defined schedule.
-
-9. **Enforce principle of least privilege** — Services should not run as `root`. The Telnet daemon running as root directly resulted in immediate full system compromise.
 
 ---
 
