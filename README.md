@@ -169,10 +169,6 @@ Full system compromise was achieved in a single, unauthenticated step. An attack
    apt update && apt install inetutils-telnetd
    ```
 
-3. **Audit SSH keys** — Review the contents of `/root/.ssh/` for any unauthorized or unexpected keys that may have been added during the window of exposure.
-
-4. **Rotate all credentials** — Assume all credentials stored on this host (database passwords, SSH keys, application secrets) are compromised.
-
 ### Short-Term
 
 5. **Replace Telnet with SSH** — Use SSH (TCP/22) for all remote administration. SSH provides encrypted, authenticated sessions.
