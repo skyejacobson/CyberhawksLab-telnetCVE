@@ -1,4 +1,4 @@
-# Penetration Test Finding Report
+# CyberHawks lab demo finding report
 
 ## Credit to: [@SafeBreach-Labs](https://github.com/SafeBreach-Labs)
 
