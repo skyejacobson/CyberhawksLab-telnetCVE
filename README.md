@@ -210,4 +210,4 @@ Full system compromise was achieved in a single, unauthenticated step. An attack
 
 ---
 
-*Report prepared for Cyberhawks Lab — internal educational use only.*
+*Report prepared for Cyberhawks Lab — educational use only.*
