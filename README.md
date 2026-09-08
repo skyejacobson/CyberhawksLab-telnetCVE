@@ -1,6 +1,6 @@
 # CyberHawks lab demo finding report
 
-## Credit to: [@SafeBreach-Labs](https://github.com/SafeBreach-Labs)
+Credit to: [@SafeBreach-Labs](https://github.com/SafeBreach-Labs)
 
 **Lab:** Cyberhawks Lab  
 **Target:** `10.1.1.1` (`demo.cyberhawks.lab`)  
