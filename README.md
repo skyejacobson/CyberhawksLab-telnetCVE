@@ -130,6 +130,19 @@ drwxrwxr-x  3 root root 4096 Sep  6  2025 .local
 drwx------  2 root root 4096 Sep  6  2025 .ssh
 ```
 
+**Service Version Verfication**
+```
+root@demo:~# telnet --version
+
+telnet (GNU inetutils) 2.6
+Copyright (C) 2025 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by many authors.
+```
+
 **Key findings from post-exploitation:**
 - `.mariadb_history` — indicates active MariaDB database usage; potential for further credential harvesting or data exfiltration.
 - `.ssh/` directory — may contain private keys usable for lateral movement to other hosts.
