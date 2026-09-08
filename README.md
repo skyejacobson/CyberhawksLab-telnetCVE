@@ -62,8 +62,8 @@ nmap -sV 10.1.1.1
 
 **Notable Observations:**
 - The host exposes a broad and concerning attack surface across 15 ports.
-- Port **23 (Telnet)** was fully accessible and not wrapped, making it an immediate priority target.
-- The presence of Telnet — an inherently insecure, cleartext protocol — on any modern host represents a critical misconfiguration.
+- Port **23 (Telnet)** was accessible, making it an immediate priority target.
+- The presence of Telnet — an inherently insecure, cleartext protocol — on any modern host represents a critical misconfiguration. It's likely that the service version is exploitable.
 
 ---
 
